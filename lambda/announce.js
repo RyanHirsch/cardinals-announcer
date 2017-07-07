@@ -21,7 +21,7 @@ exports.handler = lambdaHandler;
 
 function sendMessage(game) {
   return axios.post(process.env.URL, {
-    text: `Cardinals are playing the ${game.away_team_name} @ ${game.home_time} tomorrow`
+    text: `The ${game.home_team_name} are playing the ${game.away_team_name} @ ${game.home_time} tomorrow`
   })
 }
 
