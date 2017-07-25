@@ -1,6 +1,10 @@
 variable "region" {
   type    = "string"
-  default = "us-east-1"
+  default = "us-east-2"
+}
+
+variable "profile" {
+  description = "What AWS profile to use for deployment"
 }
 
 variable "webhook_url" {
